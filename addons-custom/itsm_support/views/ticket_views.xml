@@ -30,7 +30,7 @@
                     <t t-name="kanban-box">
 
                         <!-- FLAT ROW STYLE -->
-                        <div class="oe_kanban_global_click py-4 px-4">
+                        <div class="oe_kanban_global_click py-2 px-2">
 
                             <!-- Title -->
                             <div class="fw-semibold text-truncate">
@@ -47,7 +47,7 @@
 
                                 <!-- Left: requester -->
                                 <span class="text-muted">
-                                    <i class="fa fa-user me-1"/>
+                                    <i class="fa fa-user me-1"  title="Assigned To"/>
                                     <field name="partner_id"/>
                                 </span>
 
@@ -64,7 +64,7 @@
                                 </t>
                                 <t t-else="">
                                     <span class="text-muted">
-                                        <i class="fa fa-user-o me-1"/>
+                                        <i class="fa fa-user me-1" title="Assigned To"/>
                                         Unassigned
                                     </span>
                                 </t>
@@ -73,7 +73,7 @@
                             <!-- Deadline -->
                             <div t-if="record.deadline.value"
                                 class="small text-danger">
-                                <i class="fa fa-clock me-1"/>
+                                <i class="fa fa-clock me-1" title="Deadline"></i>
                                 <field name="deadline"/>
                             </div>
 
