@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ticket,itsm.ticket,model_itsm_ticket,base.group_user,1,1,1,1
+access_team,itsm.team,model_itsm_team,base.group_user,1,1,1,1
+access_stage,itsm.stage,model_itsm_stage,base.group_user,1,1,1,1

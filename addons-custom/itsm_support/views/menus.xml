@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="itsm_root" name="ITSM"/>
+
+    <menuitem id="itsm_ticket_menu"
+              name="Tickets"
+              parent="itsm_root"
+              action="itsm_ticket_action"/>
+
+    <menuitem id="itsm_team_menu"
+              name="Teams"
+              parent="itsm_root"
+              action="itsm_team_action"/>
+</odoo>

@@ -1,0 +1,72 @@
+<odoo>
+
+    <!-- ===============================
+         Ticket List
+    ================================ -->
+    <template id="portal_my_tickets" name="My Tickets">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <h2>My Tickets</h2>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Assigned</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <t t-foreach="tickets" t-as="t">
+                            <tr>
+                                <td>
+                                    <a t-att-href="'/my/tickets/%s' % t.id">
+                                        <t t-esc="t.name"/>
+                                    </a>
+                                </td>
+                                <td><t t-esc="t.stage_id.name"/></td>
+                                <td><t t-esc="t.user_id.name"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+
+
+
+    <!-- ===============================
+         Ticket Detail
+    ================================ -->
+    <template id="portal_ticket_detail" name="Ticket Detail">
+        <t t-call="portal.portal_layout">
+
+            <div class="container">
+
+                <h2><t t-esc="ticket.name"/></h2>
+
+                <p>
+                    <strong>Status:</strong>
+                    <t t-esc="ticket.stage_id.name"/>
+                </p>
+
+                <p>
+                    <strong>Description:</strong><br/>
+                    <t t-esc="ticket.description"/>
+                </p>
+
+                <!-- chatter -->
+                <div class="mt-4">
+                    <t t-call="mail.thread"
+                       t-set="object"
+                       t-value="ticket"/>
+                </div>
+
+            </div>
+
+        </t>
+    </template>
+
+</odoo>

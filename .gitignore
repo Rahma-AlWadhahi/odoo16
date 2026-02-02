@@ -1,0 +1,19 @@
+# Odoo source (local only)
+odoo/
+
+# Virtual environment (local only)
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

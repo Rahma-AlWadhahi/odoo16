@@ -1,0 +1,21 @@
+<odoo>
+
+    <record id="itsm_stage_action" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">itsm.stage</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="itsm_stage_tree" model="ir.ui.view">
+        <field name="name">itsm.stage.tree</field>
+        <field name="model">itsm.stage</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="sequence"/>
+                <field name="name"/>
+                <field name="fold"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>
