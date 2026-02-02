@@ -1,0 +1,101 @@
+<odoo>
+
+    <!-- ======================================
+         Support Form Page
+    ======================================= -->
+    <template id="support_form_template" name="Support Form">
+
+        <t t-call="website.layout">
+
+            <div class="container mt-5 mb-5">
+                <h2>Submit a Support Ticket</h2>
+
+                <form action="/support/create"
+                      method="post"
+                      enctype="multipart/form-data">
+
+                    <!-- CSRF -->
+                    <input type="hidden"
+                           name="csrf_token"
+                           t-att-value="request.csrf_token()"/>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text"
+                               class="form-control"
+                               name="name"
+                               required="required"/>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email"
+                               class="form-control"
+                               name="email"
+                               required="required"/>
+                    </div>
+
+                    <!-- Ticket Title (MUST MATCH CONTROLLER) -->
+                    <div class="mb-3">
+                        <label>Title</label>
+                        <!-- IMPORTANT: subject not title -->
+                        <input type="text"
+                               class="form-control"
+                               name="subject"
+                               required="required"/>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <textarea class="form-control"
+                                  name="description"
+                                  rows="5"></textarea>
+                    </div>
+
+                    <!-- Attachment -->
+                    <div class="mb-3">
+                        <label>Screenshots / Files</label>
+                        <!-- IMPORTANT: singular 'attachment' -->
+                        <input type="file"
+                               name="attachment"
+                               class="form-control"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Ticket
+                    </button>
+
+                </form>
+            </div>
+
+        </t>
+    </template>
+
+
+    <!-- ======================================
+         Thank you page
+    ======================================= -->
+    <template id="support_thanks_template" name="Support Thanks">
+
+        <t t-call="website.layout">
+
+            <div class="container mt-5 text-center">
+
+                <h2>✅ Ticket Submitted</h2>
+
+                <p>Our team will contact you soon.</p>
+
+                <a href="/" class="btn btn-secondary mt-3">
+                    Back to Home
+                </a>
+
+            </div>
+
+        </t>
+
+    </template>
+
+</odoo>
