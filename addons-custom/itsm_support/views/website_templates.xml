@@ -7,12 +7,13 @@
 
         <t t-call="website.layout">
 
-            <div class="container mt-5 mb-5">
-                <h2>Submit a Support Ticket</h2>
+            <div class="container mt-5 mb-5" style="max-width: 720px;">
+                <h2 class="mb-4">Submit a Support Ticket</h2>
 
                 <form action="/support/create"
                       method="post"
-                      enctype="multipart/form-data">
+                      enctype="multipart/form-data"
+                      class="o_website_form">
 
                     <!-- CSRF -->
                     <input type="hidden"
@@ -21,50 +22,57 @@
 
                     <!-- Name -->
                     <div class="mb-3">
-                        <label>Name</label>
+                        <label class="form-label">Your Name *</label>
                         <input type="text"
                                class="form-control"
                                name="name"
+                               placeholder="John Doe"
                                required="required"/>
                     </div>
 
                     <!-- Email -->
                     <div class="mb-3">
-                        <label>Email</label>
+                        <label class="form-label">Email *</label>
                         <input type="email"
                                class="form-control"
                                name="email"
+                               placeholder="john@email.com"
                                required="required"/>
                     </div>
 
-                    <!-- Ticket Title (MUST MATCH CONTROLLER) -->
+                    <!-- Title -->
                     <div class="mb-3">
-                        <label>Title</label>
-                        <!-- IMPORTANT: subject not title -->
+                        <label class="form-label">Ticket Title *</label>
+                        <!-- must match controller + model -->
                         <input type="text"
                                class="form-control"
                                name="subject"
+                               placeholder="Cannot login to portal"
                                required="required"/>
                     </div>
 
                     <!-- Description -->
                     <div class="mb-3">
-                        <label>Description</label>
+                        <label class="form-label">Description</label>
                         <textarea class="form-control"
                                   name="description"
-                                  rows="5"></textarea>
+                                  rows="5"
+                                  placeholder="Explain your issue..."></textarea>
                     </div>
 
-                    <!-- Attachment -->
+                    <!-- Attachments -->
                     <div class="mb-3">
-                        <label>Screenshots / Files</label>
-                        <!-- IMPORTANT: singular 'attachment' -->
+                        <label class="form-label">Attachments</label>
                         <input type="file"
                                name="attachment"
+                               multiple="multiple"
                                class="form-control"/>
+                        <small class="text-muted">
+                            You can upload multiple files
+                        </small>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary w-100">
                         Submit Ticket
                     </button>
 
@@ -84,9 +92,20 @@
 
             <div class="container mt-5 text-center">
 
-                <h2>✅ Ticket Submitted</h2>
+                <h2 class="mb-3">✅ Ticket Submitted</h2>
 
-                <p>Our team will contact you soon.</p>
+                <t t-if="ticket">
+                    <h5>
+                        Ticket Number:
+                        <strong class="text-primary">
+                            <t t-esc="ticket.name"/>
+                        </strong>
+                        —
+                        <t t-esc="ticket.subject"/>
+                    </h5>
+                </t>
+
+                <p class="mt-3">Our team will contact you soon.</p>
 
                 <a href="/" class="btn btn-secondary mt-3">
                     Back to Home

@@ -46,12 +46,15 @@ class ITSMWebsite(http.Controller):
                 'email': email,
             })
 
+        subject = post.get('subject')
+
         ticket = request.env['itsm.ticket'].sudo().create({
-            'name': subject,
+            'subject': subject,        # ⭐ REQUIRED
             'description': description,
             'partner_id': partner.id,
             'team_id': int(team_id) if team_id else False,
         })
+
 
         # attachment
         file = request.httprequest.files.get('attachment')
