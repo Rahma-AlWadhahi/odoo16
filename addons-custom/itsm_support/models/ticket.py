@@ -43,6 +43,21 @@ class ITSMTicket(models.Model):
         default=lambda self: self.env.user.partner_id,
         tracking=True
     )
+    partner_email = fields.Char(
+        related='partner_id.email',
+        store=True,
+        readonly=True
+    )
+    partner_phone = fields.Char(
+        related='partner_id.phone',
+        store=True,
+        readonly=True
+    )
+    partner_mobile = fields.Char(
+        related='partner_id.mobile',
+        store=True,
+        readonly=True
+    )
 
     team_id = fields.Many2one(
         'itsm.team',

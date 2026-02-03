@@ -113,28 +113,40 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                <!-- Title section -->
                     <div class="oe_title">
-                        <label for="subject"/>
-                        <h1>
-                            <field name="subject" placeholder="Ticket title..."/>
-                        </h1>
-                        <div class="text-muted">
+                        <!-- Ticket Number (highlighted) -->
+                        <h2 class="text-primary fw-bold mb-1">
                             <field name="name" readonly="1"/>
-                        </div>
+                        </h2>
+                        <!-- Title (read only) -->
+                        <h1>
+                            <field name="subject" readonly="1"/>
+                        </h1>
                     </div>
-                    <group>
-                        <field name="partner_id"/>
-                        <field name="team_id"/>
-                        <field name="user_id"/>
-                        <field name="stage_id"/>
-                        <field name="priority"/>
-                        <field name="deadline"/>
-                        <field name="attachment_ids" widget="many2many_binary"/>
-                        <field name="description"/>
+                    <group col="2">
+                        <group string="Ticket Details">
+                            <field name="team_id"/>
+                            <field name="user_id"/>
+                            <field name="stage_id"/>
+                            <field name="priority"/>
+                            <field name="deadline"/>
+                        </group>
+                        <group string="Requester Information">
+                            <field name="partner_id" widget="many2one_avatar"/>
+                            <field name="partner_email" readonly="1"/>
+                            <field name="partner_phone" readonly="1"/>
+                            <field name="partner_mobile" readonly="1"/>
+                        </group>
                     </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" placeholder="Describe the issue..."/>
+                        </page>
+                        <page string="Attachments">
+                            <field name="attachment_ids" widget="many2many_binary"/>
+                        </page>
+                    </notebook>
                 </sheet>
-
                 <chatter/>
             </form>
         </field>
