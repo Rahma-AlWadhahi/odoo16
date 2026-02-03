@@ -1,22 +1,54 @@
 <odoo>
+
+    <!-- New -->
     <record id="stage_new" model="itsm.stage">
         <field name="name">New</field>
         <field name="sequence">1</field>
+        <field name="color">secondary</field>
     </record>
 
+    <!-- Assigned -->
+    <record id="stage_assigned" model="itsm.stage">
+        <field name="name">Assigned</field>
+        <field name="sequence">3</field>
+        <field name="color">primary</field>
+    </record>
+
+    <!-- In Progress -->
     <record id="stage_progress" model="itsm.stage">
         <field name="name">In Progress</field>
         <field name="sequence">5</field>
+        <field name="color">warning</field>
     </record>
 
+    <!-- Waiting -->
     <record id="stage_waiting" model="itsm.stage">
         <field name="name">Waiting</field>
-        <field name="sequence">8</field>
+        <field name="sequence">7</field>
+        <field name="color">info</field>
     </record>
 
-    <record id="stage_done" model="itsm.stage">
-        <field name="name">Done</field>
-        <field name="fold">1</field>
-        <field name="sequence">10</field>
+    <!-- Testing -->
+    <record id="stage_testing" model="itsm.stage">
+        <field name="name">Testing</field>
+        <field name="sequence">9</field>
+        <field name="color">info</field>
     </record>
+
+    <!-- Resolved -->
+    <record id="stage_done" model="itsm.stage">
+        <field name="name">Resolved</field>
+        <field name="sequence">11</field>
+        <field name="fold">1</field>
+        <field name="color">success</field>
+    </record>
+
+    <!-- Cancelled -->
+    <record id="stage_cancelled" model="itsm.stage">
+        <field name="name">Cancelled</field>
+        <field name="sequence">12</field>
+        <field name="fold">1</field>
+        <field name="color">danger</field>
+    </record>
+
 </odoo>

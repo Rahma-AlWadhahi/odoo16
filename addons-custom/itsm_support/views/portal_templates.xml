@@ -69,7 +69,7 @@
 
                                             <!-- Status -->
                                             <td>
-                                                <span class="badge rounded-pill bg-info text-dark">
+                                                <span t-attf-class="badge rounded-pill bg-#{t.stage_id.color}">
                                                     <t t-esc="t.stage_id.name"/>
                                                 </span>
                                             </td>
