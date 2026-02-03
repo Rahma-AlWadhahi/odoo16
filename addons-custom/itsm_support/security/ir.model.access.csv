@@ -10,3 +10,4 @@ access_ticket_agent,itsm.ticket.agent,model_itsm_ticket,group_itsm_agent,1,1,0,0
 access_stage_agent,itsm.stage.agent,model_itsm_stage,group_itsm_agent,1,0,0,0
 
 access_ticket_portal,itsm.ticket.portal,model_itsm_ticket,base.group_portal,1,0,1,0
+access_stage_portal,itsm.stage.portal,model_itsm_stage,base.group_portal,1,0,0,0

@@ -10,7 +10,7 @@ class ITSMWebsite(http.Controller):
     # =====================================================
     # Support Form Page
     # =====================================================
-    @http.route('/support', type='http', auth='public', website=True)
+    @http.route('/support', type='http', auth='user', website=True)
     def support_form(self, **kw):
         teams = request.env['itsm.team'].sudo().search([])
 
@@ -26,7 +26,7 @@ class ITSMWebsite(http.Controller):
     @http.route(
         '/support/create',
         type='http',
-        auth='public',
+        auth='user',
         website=True,
         methods=['POST'],
         csrf=True
@@ -62,7 +62,7 @@ class ITSMWebsite(http.Controller):
         ticket = request.env['itsm.ticket'].sudo().create({
             'subject': subject,
             'description': description,
-            'partner_id': partner.id,
+            'partner_id': request.env.user.partner_id.id,
             'team_id': int(team_id) if team_id else False,
         })
 
@@ -120,7 +120,7 @@ class ITSMWebsite(http.Controller):
     @http.route(
         '/support/thanks/<int:ticket_id>',
         type='http',
-        auth='public',
+        auth='user',
         website=True
     )
     def support_thanks(self, ticket_id=None, **kw):
