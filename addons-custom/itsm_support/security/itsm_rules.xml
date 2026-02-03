@@ -1,0 +1,31 @@
+<odoo>
+
+    <!-- Portal: only own -->
+    <record id="rule_portal_own_ticket" model="ir.rule">
+        <field name="model_id" ref="model_itsm_ticket"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[('partner_id','=',user.partner_id.id)]</field>
+    </record>
+
+    <!-- Agent: only assigned -->
+    <record id="rule_agent_ticket" model="ir.rule">
+        <field name="model_id" ref="model_itsm_ticket"/>
+        <field name="groups" eval="[(4, ref('group_itsm_agent'))]"/>
+        <field name="domain_force">[('user_id','=',user.id)]</field>
+    </record>
+
+    <!-- Leader: team -->
+    <record id="rule_leader_ticket" model="ir.rule">
+        <field name="model_id" ref="model_itsm_ticket"/>
+        <field name="groups" eval="[(4, ref('group_itsm_leader'))]"/>
+        <field name="domain_force">[('team_id.leader_id','=',user.id)]</field>
+    </record>
+
+    <!-- Manager: all -->
+    <record id="rule_manager_ticket" model="ir.rule">
+        <field name="model_id" ref="model_itsm_ticket"/>
+        <field name="groups" eval="[(4, ref('group_itsm_manager'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+</odoo>

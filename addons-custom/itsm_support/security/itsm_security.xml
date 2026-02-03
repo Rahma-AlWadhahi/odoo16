@@ -1,0 +1,41 @@
+<odoo>
+
+    <!-- =========================
+         Category (shows in UI)
+    ========================== -->
+    <record id="module_category_itsm" model="ir.module.category">
+        <field name="name">IT Service Management</field>
+        <field name="description">Manage tickets and support teams</field>
+        <field name="sequence">30</field>
+    </record>
+
+
+    <!-- =========================
+         Agent (base role FIRST)
+    ========================== -->
+    <record id="group_itsm_agent" model="res.groups">
+        <field name="name">Agent</field>
+        <field name="category_id" ref="module_category_itsm"/>
+    </record>
+
+
+    <!-- =========================
+         Team Leader
+    ========================== -->
+    <record id="group_itsm_leader" model="res.groups">
+        <field name="name">Team Leader</field>
+        <field name="category_id" ref="module_category_itsm"/>
+        <field name="implied_ids" eval="[(4, ref('group_itsm_agent'))]"/>
+    </record>
+
+
+    <!-- =========================
+         Manager (top role)
+    ========================== -->
+    <record id="group_itsm_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="module_category_itsm"/>
+        <field name="implied_ids" eval="[(4, ref('group_itsm_leader'))]"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,29 @@
+<odoo>
+
+    <!-- Category -->
+    <record id="module_category_itsm" model="ir.module.category">
+        <field name="name">ITSM</field>
+        <field name="sequence">25</field>
+    </record>
+
+    <!-- 1️⃣ Agent -->
+    <record id="group_itsm_agent" model="res.groups">
+        <field name="name">ITSM Agent</field>
+        <field name="category_id" ref="module_category_itsm"/>
+    </record>
+
+    <!-- 2️⃣ Leader -->
+    <record id="group_itsm_leader" model="res.groups">
+        <field name="name">ITSM Team Leader</field>
+        <field name="category_id" ref="module_category_itsm"/>
+        <field name="implied_ids" eval="[(4, ref('group_itsm_agent'))]"/>
+    </record>
+
+    <!-- 3️⃣ Manager -->
+    <record id="group_itsm_manager" model="res.groups">
+        <field name="name">ITSM Manager</field>
+        <field name="category_id" ref="module_category_itsm"/>
+        <field name="implied_ids" eval="[(4, ref('group_itsm_leader'))]"/>
+    </record>
+
+</odoo>

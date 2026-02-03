@@ -6,7 +6,10 @@
     'author': 'Rahma Al-Wadhahi',
     'depends': ['base', 'mail', 'portal', 'website'],
     'data': [
+        'security/itsm_groups.xml',
+        'security/itsm_security.xml',
         'security/ir.model.access.csv',
+        'security/itsm_rules.xml',
         'data/sequence.xml',
         'data/stage_data.xml',
 

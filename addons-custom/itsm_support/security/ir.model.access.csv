@@ -1,4 +1,12 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_ticket,itsm.ticket,model_itsm_ticket,base.group_user,1,1,1,1
-access_team,itsm.team,model_itsm_team,base.group_user,1,1,1,1
-access_stage,itsm.stage,model_itsm_stage,base.group_user,1,1,1,1
+access_ticket_manager,itsm.ticket.manager,model_itsm_ticket,group_itsm_manager,1,1,1,1
+access_team_manager,itsm.team.manager,model_itsm_team,group_itsm_manager,1,1,1,1
+access_stage_manager,itsm.stage.manager,model_itsm_stage,group_itsm_manager,1,1,1,1
+
+access_ticket_leader,itsm.ticket.leader,model_itsm_ticket,group_itsm_leader,1,1,1,0
+access_stage_leader,itsm.stage.leader,model_itsm_stage,group_itsm_leader,1,0,0,0
+
+access_ticket_agent,itsm.ticket.agent,model_itsm_ticket,group_itsm_agent,1,1,0,0
+access_stage_agent,itsm.stage.agent,model_itsm_stage,group_itsm_agent,1,0,0,0
+
+access_ticket_portal,itsm.ticket.portal,model_itsm_ticket,base.group_portal,1,0,1,0
