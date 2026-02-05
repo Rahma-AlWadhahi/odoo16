@@ -1,0 +1,726 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* auth_totp_portal
+# 	* itsm_support
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-04 12:05+0000\n"
+"PO-Revision-Date: 2026-02-04 12:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: auth_totp_portal
+#. odoo-javascript
+#: code:addons/auth_totp_portal/static/src/js/totp_frontend.js:0
+#, python-format
+msgid " Copy"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "(Disable two-factor authentication)"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "+ New Ticket"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_kanban
+msgid "<i class=\"fa fa-clock me-1\" title=\"Deadline\"/>"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_kanban
+msgid "<i class=\"fa fa-user me-1\" title=\"Assigned To\"/>"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid ""
+"<i class=\"fa fa-warning\"/>\n"
+"                        Two-factor authentication not enabled"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "<i title=\"Documentation\" class=\"fa fa-fw o_button_icon fa-info-circle\"/>"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid ""
+"<small class=\"text-muted\">\n"
+"                            Track your requests and responses\n"
+"                        </small>"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid ""
+"<small class=\"text-muted\">\n"
+"                            You can upload multiple files\n"
+"                        </small>"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_kanban
+msgid ""
+"<span class=\"text-muted\">\n"
+"                                        <i class=\"fa fa-user me-1\" title=\"Assigned To\"/>\n"
+"                                        Unassigned\n"
+"                                    </span>"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_ticket_detail
+msgid ""
+"<span class=\"text-muted\">\n"
+"                                        No description provided.\n"
+"                                    </span>"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid ""
+"<span class=\"text-success\">\n"
+"                        <i class=\"fa fa-check-circle\"/>\n"
+"                        Two-factor authentication enabled\n"
+"                    </span>"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "<strong>Added On</strong>"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "<strong>Trusted Device</strong>"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: itsm_support
+#: model:res.groups,name:itsm_support.group_itsm_agent
+msgid "Agent"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__user_id
+msgid "Assigned To"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__attachment_ids
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_form
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Attachments"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_thanks_template
+msgid "Back to Home"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__primary
+msgid "Blue"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Cannot login to portal"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__color
+msgid "Color"
+msgstr ""
+
+#. module: auth_totp_portal
+#. odoo-javascript
+#: code:addons/auth_totp_portal/static/src/js/totp_frontend.js:0
+#, python-format
+msgid "Copied !"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Create your first ticket"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__create_uid
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__create_uid
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__create_date
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__create_date
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__create_date
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_ticket_detail
+msgid "Created on"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_ticket__priority__3
+msgid "Critical"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__info
+msgid "Cyan"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__deadline
+msgid "Deadline"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_form
+msgid "Describe the issue..."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__description
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_form
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_ticket_detail
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Description"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__display_name
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__display_name
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__partner_email
+msgid "Email"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Email *"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "Enable two-factor authentication"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Explain your issue..."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__fold
+msgid "Folded in Kanban"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__secondary
+msgid "Gray"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__success
+msgid "Green"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_ticket__priority__2
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "High"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__id
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__id
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__id
+msgid "ID"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.module.category,name:itsm_support.module_category_itsm
+msgid "IT Service Management"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.ui.menu,name:itsm_support.itsm_root
+msgid "ITSM"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model,name:itsm_support.model_itsm_team
+msgid "ITSM Team"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model,name:itsm_support.model_itsm_ticket
+msgid "ITSM Ticket"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__message_has_error
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "John Doe"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage____last_update
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team____last_update
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Last Update"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__write_uid
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__write_uid
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__write_date
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__write_date
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_ticket__priority__0
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Low"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.module.category,description:itsm_support.module_category_itsm
+msgid "Manage tickets and support teams"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__manager_id
+#: model:res.groups,name:itsm_support.group_itsm_manager
+msgid "Manager"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_ticket__priority__1
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Medium"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__member_ids
+msgid "Members"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__partner_mobile
+msgid "Mobile"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "My Support Tickets"
+msgstr "تذاكر الدعم الخاصة بي"
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__name
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__name
+msgid "Name"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "No tickets yet"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: auth_totp_portal
+#. odoo-javascript
+#: code:addons/auth_totp_portal/static/src/js/totp_frontend.js:0
+#, python-format
+msgid "Operation failed for unknown reason."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__warning
+msgid "Orange"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_thanks_template
+msgid "Our team will contact you soon."
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__partner_phone
+msgid "Phone"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__access_url
+msgid "Portal URL"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__priority
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Priority"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields.selection,name:itsm_support.selection__itsm_stage__color__danger
+msgid "Red"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__partner_id
+msgid "Requester"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_form
+msgid "Requester Information"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "Revoke All"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_stage__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__stage_id
+msgid "Stage"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.actions.act_window,name:itsm_support.itsm_stage_action
+msgid "Stages"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Status"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Subject"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Submit Ticket"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Submit a Support Ticket"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__team_id
+msgid "Team"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_team__leader_id
+#: model:res.groups,name:itsm_support.group_itsm_leader
+msgid "Team Leader"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.actions.act_window,name:itsm_support.itsm_team_action
+#: model:ir.ui.menu,name:itsm_support.itsm_team_menu
+msgid "Teams"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "Ticket #"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.itsm_ticket_form
+msgid "Ticket Details"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__name
+msgid "Ticket Number"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_thanks_template
+msgid "Ticket Number:"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model,name:itsm_support.model_itsm_stage
+msgid "Ticket Stage"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Ticket Title *"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.actions.act_window,name:itsm_support.itsm_ticket_action
+#: model:ir.ui.menu,name:itsm_support.itsm_ticket_menu
+msgid "Tickets"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__subject
+msgid "Title"
+msgstr ""
+
+#. module: auth_totp_portal
+#: model_terms:ir.ui.view,arch_db:auth_totp_portal.totp_portal_hook
+msgid "Two-factor authentication"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: auth_totp_portal
+#: model:ir.model,name:auth_totp_portal.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "View"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_thanks_template
+msgid "View My Tickets"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,field_description:itsm_support.field_itsm_ticket__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: itsm_support
+#: model:ir.model.fields,help:itsm_support.field_itsm_ticket__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_my_tickets
+msgid "When you submit a request, it will appear here."
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "Your Name *"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_form_template
+msgid "john@email.com"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.portal_ticket_detail
+msgid "← Back to Tickets"
+msgstr ""
+
+#. module: itsm_support
+#: model_terms:ir.ui.view,arch_db:itsm_support.support_thanks_template
+msgid "✅ Ticket Submitted"
+msgstr ""
